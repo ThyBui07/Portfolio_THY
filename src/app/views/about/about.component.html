@@ -1,0 +1,44 @@
+<section class="w-100 vh-auto pb3">
+  <!-- introduction -->
+  <div class="w-100 pa3 mr2 mt2">
+      <p class="f4 lh-copy measure">
+          Hi there, I'm <b>Thy</b>. I'm a <b>Junior Web Developer</b> with a desire to deliver data-driven web applications for clients. I can <b>code</b>, I can <b>draw</b>, I can <b>design</b>, and I <b>do business</b>. I love <b>minimalism</b>.
+      </p>
+  </div>
+  <!-- quotes -->
+  <div class="w-100 pa3 mr2 mt2 db db-m dn-l">
+    <quotes-component></quotes-component>
+</div>
+  <!-- skills -->
+  <div class="flex w-100 pa3 mr2 mt2 items-center">
+    <div class="w-100">
+        <h2>
+            <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+              Skill Highlights
+            </span>
+          </h2>
+        <list-component *ngFor="let skill of skills" [list] = "skill"></list-component>
+    </div>
+    <div class="w-100 dn db-l">
+        <quotes-component></quotes-component>
+  </div>
+  </div>
+  <!-- education -->
+  <div class="w-100 pa3 mr2 mt2">
+      <h2>
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          Education
+        </span>
+      </h2>
+       <list-component *ngFor="let education of educations" [list]="education"></list-component>
+  </div>
+  <!-- certificate -->
+  <div class="w-100 pa3 mr2 mt2">
+      <h2>
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          Certificate
+        </span>
+      </h2>
+      <list-component *ngFor="let certificate of certificates" [list]="certificate"></list-component>
+  </div>
+</section>

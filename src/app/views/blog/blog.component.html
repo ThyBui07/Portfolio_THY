@@ -1,0 +1,33 @@
+<section class="w-100 vh-auto pb6">
+  <div class="w-100 pa3 mr2 mt2">
+    <p class="f4 lh-copy measure">
+      Welcome to my blog. I like to write about tech tutorials, work & life, slow fashion, skincare, etc. In order
+      words, this is my adulthood journey.
+    </p>
+  </div>
+
+  <div class="w-100">
+    <div class="w-80" *ngFor="let post of posts">
+
+      <blog-post-component *ngFor="let post of posts" [post]="post"></blog-post-component>
+      <!-- <blog-post-component></blog-post-component> -->
+      <!-- <article class="pv5 bt bb b--black-10 ph3">
+          <div class="flex flex-column flex-row-ns">
+            <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+              <h1 class="f2 mt0 lh-title"> {{ post.title }}
+              </h1>
+              <h6 class="f6 db mid-gray mv2">Tags: {{ post.tag[0] }}</h6>
+              <div class="f4 f4-l lh-copy" [innerHTML]="post.content">
+
+                </div>
+            </div>
+            <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+              <img id="blogPhoto" src="http://mrmrs.github.io/photos/cpu.jpg" class="db"
+                alt="Photo of a dimly lit room with a computer interface terminal.">
+            </div>
+          </div>
+      </article> -->
+    </div>
+  </div>
+
+</section>
